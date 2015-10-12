@@ -4,7 +4,7 @@ var outDir = 'build/';
 
 module.exports = {
   host: 'localhost',
-  port: 3000,
+  port: 8080,
 
   // app directories
   appDir: 'app',
