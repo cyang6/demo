@@ -10,6 +10,7 @@
     .module('demo', [
       'ngMaterial',
       'ui.router',
-      'home'
+      'home',
+      'oc.lazyload'
     ]);
 }());

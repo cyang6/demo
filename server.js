@@ -3,7 +3,9 @@
  */
 var express = require('express');
 var app = express();
+var compression = require('compression');
 
+app.use(compression());
 app.use('/', express.static('build/app'));
 
 var server = app.listen(8080, function(){
