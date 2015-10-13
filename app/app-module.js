@@ -11,6 +11,6 @@
       'ngMaterial',
       'ui.router',
       'home',
-      'oc.lazyload'
+      'oc.lazyLoad'
     ]);
 }());
