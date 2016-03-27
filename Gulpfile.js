@@ -6,6 +6,7 @@ var _ = require('lodash')
   , gulp = require('gulp')
   , gulpFiles = require('require-dir')('./gulp')
   , path = require('path')
+  , exec = require('child_process').exec
   , $, key;
 
 $ = require('gulp-load-plugins')({
@@ -58,3 +59,11 @@ gulp.task('dev', ['build'], function () {
 });
 
 gulp.task('default', ['dev']);
+
+gulp.task('server', ['build'], function (cb) {
+  exec('node server.js', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+});

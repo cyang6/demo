@@ -8,8 +8,13 @@
    */
   angular
     .module('demo', [
-      'ngMaterial',
       'ui.router',
+      'ngAnimate',
+      'ngAria',
+      'ngCookies',
+      'ngMaterial',
+      'ngMessages',
+      'ngSanitize',
       'home',
       'oc.lazyLoad'
     ]);
